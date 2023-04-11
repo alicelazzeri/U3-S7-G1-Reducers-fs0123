@@ -1,10 +1,11 @@
 export const ADD_TO_FAVOURITES = "ADD_TO_FAVOURITES";
 export const DELETE = "DELETE";
 export const FETCH_RESULTS = "FETCH_RESULTS";
+export const RESET_RESULTS = "RESET_RESULTS";
 
 export const addToFavouritesAction = data => ({ type: ADD_TO_FAVOURITES, payload: data });
 export const removeToFavouritesAction = index => ({ type: DELETE, payload: index });
-
+export const resetResultsAction = () => ({ type: RESET_RESULTS });
 export const getCompanyAction = params => {
   const baseEndpoint = "https://strive-benchmark.herokuapp.com/api/jobs?company=";
 
